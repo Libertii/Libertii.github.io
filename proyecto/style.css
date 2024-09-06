@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f8b4b4;
+    width: 100%;
+}
+header{
+    position: fixed;
+    z-index: 100;
+}
+
+a{
+    text-decoration: none;
+}
+header ul{
+    list-style: none;
+    display: flex;
+flex-direction: row;
+}
+header ul li{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+img{
+    width: 150px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    color: cornsilk;
+
+}
+
+nav a:hover{
+    color:rgb(207, 80, 133)
+}
+
+#carouselExampleCaptions {
+    margin: 5px;
+
+}
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(205, 200, 200, 0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+
+h2 {
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slidein {
+from {
+margin-left: 100%;
+width: 300%;
+}
+
+to {
+margin-left: 10%;
+width: 100%;
+}
+}
+h2{
+    font-family: "Aguafina Script", system-ui;
+    font-size: 50px;
+}
+
+.tarjeta{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10%;
+    
+}
+.card{
+    margin: 15px;
+}
+
+.card2{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+   }
+
+   .card2{ flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.card2 .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+border-radius: 10px;
+overflow: hidden;
+transition: .5s;
+}
+
+.card2 .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card2 .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card2 .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #f8b4b4;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #cea2a2;
+}
+
+.card2 .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card2 .back p{
+    letter-spacing: 1px;
+}
+
+.card2:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card2:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+footer{
+    background-color: #997272;
+    width: 100%; 
+    margin-top: 2%;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+}
+
+footer p{
+    font-size: 15px;
+    color: #790b0b;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
